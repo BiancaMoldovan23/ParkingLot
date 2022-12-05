@@ -11,6 +11,21 @@ public class CarDto {
         this.parkingSpot = parkingSpot;
         this.ownerName = ownerName;
     }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+
+    public void setParkingSpot(String parkingSpot) {
+        this.parkingSpot = parkingSpot;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
    public Long getId(){
         return id;
    }

@@ -33,8 +33,7 @@ public List<CarDto> findAllCars(){
 
     private List<CarDto> copyCarsToDto(List<Car> cars) {
     List<CarDto> carDto;
-    carDto=cars;
-        .stream()
+    carDto=cars.stream()
         .map(x->new CarDto(x.getId(), x.getLicensePlate(),x.getParkingSpot(),x.getOwner().getUsername())).collect(Collectors.toList());
     return carDto;
 }
