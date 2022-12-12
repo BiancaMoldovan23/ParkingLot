@@ -5,7 +5,8 @@ import jakarta.persistence.*;
 import java.util.Collection;
 
 @Entity
-public class User {
+public class
+User {
     private Long id;
 
     public void setId(Long id) {
@@ -28,7 +29,6 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
-
     private String email;
     private String password;
 
@@ -51,6 +51,7 @@ public class User {
     private Collection<Car> cars;
 
     @OneToMany(mappedBy = "owner")
+
     public Collection<Car> getCars() {
         return cars;
     }
@@ -58,4 +59,6 @@ public class User {
     public void setCars(Collection<Car> cars) {
         this.cars = cars;
     }
+
+
 }

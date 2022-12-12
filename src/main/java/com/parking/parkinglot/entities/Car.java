@@ -13,7 +13,6 @@ public class Car {
     public String licensePlate;
 
     private String parkingSpot;
-
     @ManyToOne
     public User getOwner() {
         return owner;
@@ -42,7 +41,7 @@ public class Car {
         this.parkingSpot = parkingSpot;
     }
 
-    public String getLicensePlate() {
+    public  String getLicensePlate() {
         return licensePlate;
     }
 

@@ -1,4 +1,3 @@
-<%@tag description="base page template" pageEncoding="UTF-8"%>
 <%@attribute name="pageTitle"%>
 <!DOCTYPE html>
 <html>
@@ -9,7 +8,6 @@
         padding: 3px;
         background-color: DarkSalmon;
         color: white;
-
     }
 </style>
 <head>
@@ -20,12 +18,11 @@
 <body>
 <jsp:include page="/WEB-INF/pages/menu.jsp" />
 <main class="container-fluid mt-5">
-<jsp:doBody/>
+    <jsp:doBody/>
 </main>
 <footer class="container">
     <p>&copy; 2022 Moldovan Bianca</p>
 </footer>
-<script src="${pageContext.request.contextPath}/scripts/form-validation.js"></script>
 </body>
 
 </html>
